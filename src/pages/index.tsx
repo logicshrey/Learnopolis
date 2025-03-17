@@ -175,6 +175,99 @@ export default function Home() {
           </div>
         </div>
       </div>
+
+      {/* Videos Section */}
+      <section className="py-12 bg-gray-50 dark:bg-gray-800">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+          <div className="text-center">
+            <h2 className="text-3xl font-extrabold text-gray-900 dark:text-white sm:text-4xl">
+              Learn with Video Lessons
+            </h2>
+            <p className="mt-4 max-w-2xl text-xl text-gray-500 dark:text-gray-300 mx-auto">
+              Watch expert-led video tutorials for all skill levels, from beginner to advanced.
+            </p>
+          </div>
+          
+          <div className="mt-10">
+            <div className="grid grid-cols-1 gap-8 sm:grid-cols-2 lg:grid-cols-3">
+              {/* Beginner Card */}
+              <div className="bg-white dark:bg-gray-700 overflow-hidden shadow rounded-lg">
+                <div className="p-5">
+                  <div className="flex items-center">
+                    <div className="flex-shrink-0 bg-green-100 dark:bg-green-900 rounded-md p-3">
+                      <svg className="h-6 w-6 text-green-600 dark:text-green-200" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M5 3v4M3 5h4M6 17v4m-2-2h4m5-16l2.286 6.857L21 12l-5.714 2.143L13 21l-2.286-6.857L5 12l5.714-2.143L13 3z" />
+                      </svg>
+                    </div>
+                    <div className="ml-5">
+                      <h3 className="text-lg font-medium text-gray-900 dark:text-white">Beginner Videos</h3>
+                      <p className="text-sm text-gray-500 dark:text-gray-300">Perfect for those just starting out</p>
+                    </div>
+                  </div>
+                  <div className="mt-4">
+                    <a 
+                      href="/videos?difficulty=beginner" 
+                      className="inline-flex items-center px-4 py-2 border border-transparent text-sm font-medium rounded-md shadow-sm text-white bg-indigo-600 hover:bg-indigo-700"
+                    >
+                      Watch Now
+                    </a>
+                  </div>
+                </div>
+              </div>
+              
+              {/* Intermediate Card */}
+              <div className="bg-white dark:bg-gray-700 overflow-hidden shadow rounded-lg">
+                <div className="p-5">
+                  <div className="flex items-center">
+                    <div className="flex-shrink-0 bg-blue-100 dark:bg-blue-900 rounded-md p-3">
+                      <svg className="h-6 w-6 text-blue-600 dark:text-blue-200" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z" />
+                      </svg>
+                    </div>
+                    <div className="ml-5">
+                      <h3 className="text-lg font-medium text-gray-900 dark:text-white">Intermediate Videos</h3>
+                      <p className="text-sm text-gray-500 dark:text-gray-300">For those ready to level up their skills</p>
+                    </div>
+                  </div>
+                  <div className="mt-4">
+                    <a 
+                      href="/videos?difficulty=intermediate" 
+                      className="inline-flex items-center px-4 py-2 border border-transparent text-sm font-medium rounded-md shadow-sm text-white bg-indigo-600 hover:bg-indigo-700"
+                    >
+                      Watch Now
+                    </a>
+                  </div>
+                </div>
+              </div>
+              
+              {/* Advanced Card */}
+              <div className="bg-white dark:bg-gray-700 overflow-hidden shadow rounded-lg">
+                <div className="p-5">
+                  <div className="flex items-center">
+                    <div className="flex-shrink-0 bg-purple-100 dark:bg-purple-900 rounded-md p-3">
+                      <svg className="h-6 w-6 text-purple-600 dark:text-purple-200" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M13 10V3L4 14h7v7l9-11h-7z" />
+                      </svg>
+                    </div>
+                    <div className="ml-5">
+                      <h3 className="text-lg font-medium text-gray-900 dark:text-white">Advanced Videos</h3>
+                      <p className="text-sm text-gray-500 dark:text-gray-300">Expert content for seasoned professionals</p>
+                    </div>
+                  </div>
+                  <div className="mt-4">
+                    <a 
+                      href="/videos?difficulty=advanced" 
+                      className="inline-flex items-center px-4 py-2 border border-transparent text-sm font-medium rounded-md shadow-sm text-white bg-indigo-600 hover:bg-indigo-700"
+                    >
+                      Watch Now
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
     </div>
   );
 }

@@ -6,6 +6,7 @@ import Link from 'next/link';
 import { Course } from '@/types';
 import RecommendedCourses from '@/components/dashboard/RecommendedCourses';
 import LearningPathCard from '@/components/dashboard/LearningPathCard';
+import RecentVideos from '@/components/dashboard/RecentVideos';
 
 interface CourseProgress {
   courseId: {
@@ -262,6 +263,10 @@ export default function Dashboard() {
 
         <div className="mt-8">
           <LearningPathCard />
+        </div>
+
+        <div className="mt-8">
+          <RecentVideos />
         </div>
       </main>
     </div>

@@ -13,6 +13,7 @@ export default function Navigation() {
   const navigation = [
     { name: 'Home', href: '/' },
     { name: 'Courses', href: '/courses' },
+    { name: 'Videos', href: '/videos' },
     { name: 'Learning Paths', href: '/learning-paths' },
     { name: 'Leaderboard', href: '/leaderboard' },
   ];
